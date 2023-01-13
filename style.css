@@ -41,7 +41,7 @@ legend{
     color: white;
     font-size: 15px;
     width: 100%;
-    letter-spacing: 2px; /* espaçamento entre as letras*/
+    /*letter-spacing: 2px; espaçamento entre as letras*/
 }
 
 .labelInput{

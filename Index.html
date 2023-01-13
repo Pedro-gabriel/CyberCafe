@@ -44,7 +44,7 @@
                 <label for="data_nascimento"><b>Ano de nascimento</b></label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
 
-                <br>
+                <br><br><br>
                 <div class="inputBox">
                     <input type="text" name="cep" id="cep" class="inputUser" maxlength="9"
                         onkeypress="formatar('#####-###', this)" required>
@@ -70,7 +70,7 @@
         </form>
     </div>
     <script>
-        // Validade compo CEP
+        // Validando compos
         function formatar(mascara, documento) {
             var i = documento.value.length;
             var saida = mascara.substring(0, 1);
@@ -81,7 +81,7 @@
             }
 
         }
-        // validade compo telefone
+
     </script>
 </body>
 
