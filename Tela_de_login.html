@@ -7,69 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-        <div class="box-login">
-            <div class="box-img">
-                <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-                    <!-- Indicators/dots -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                    </div>
-
-                    <!-- The slideshow/carousel -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://img.freepik.com/fotos-gratis/xicara-de-cafe-com-sobremesa-doce_1303-24016.jpg?w=360&t=st=1673821881~exp=1673822481~hmac=b03f5b1d9c860bc2ddaefa58d95ba0065273625eeffa67e15b16d1b3a8f1ed3c"
-                                alt="Los Angeles" class="d-block">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://img.freepik.com/fotos-gratis/duas-xicaras-de-cafe-e-croissants-em-um-fundo-de-madeira-boa-luz-atmosfera-de-manha_78826-2272.jpg?w=360&t=st=1673823134~exp=1673823734~hmac=502755e1e1486f4187a66139c01e26bc48a356809f248d4f96df1bec35bcb937"
-                                alt="Chicago" class="d-block">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://img.freepik.com/fotos-gratis/formacao-pequeno-almoco-mao-barista-cafe_1286-291.jpg?w=360&t=st=1673823170~exp=1673823770~hmac=1650fdf8e93da854704fa1c6a6b711c8473bb7fe5a94c32529d02f63590b4dfc"
-                                alt="New York" class="d-block">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls/icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </button>
-                </div>
+    <!-- "https://img.freepik.com/fotos-gratis/xicara-de-cafe-com-sobremesa-doce_1303-24016.jpg?w=360&t=st=1673821881~exp=1673822481~hmac=b03f5b1d9c860bc2ddaefa58d95ba0065273625eeffa67e15b16d1b3a8f1ed3c"
+"https://img.freepik.com/fotos-gratis/duas-xicaras-de-cafe-e-croissants-em-um-fundo-de-madeira-boa-luz-atmosfera-de-manha_78826-2272.jpg?w=360&t=st=1673823134~exp=1673823734~hmac=502755e1e1486f4187a66139c01e26bc48a356809f248d4f96df1bec35bcb937"
+"https://img.freepik.com/fotos-gratis/formacao-pequeno-almoco-mao-barista-cafe_1286-291.jpg?w=360&t=st=1673823170~exp=1673823770~hmac=1650fdf8e93da854704fa1c6a6b711c8473bb7fe5a94c32529d02f63590b4dfc"
+-->
+    <div class="box-login">
+        <div class="box-img">
+            <img src="https://cdn-icons-png.flaticon.com/512/5547/5547586.png" alt="cypercoffe">
+        </div>
+        <div>
+            <h1>Login</h1>
+            <br>
+            <div class="inputBox">
+                <input type="text" name="login" id="login" class="inputUser" required>
+                <label for="login" class="labelInput">Login</label>
             </div>
-            <div class="container-login">
-                <h1>Login</h1>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="login" id="login" class="inputUser" required>
-                    <label for="login" class="labelInput">Login</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <img id="olho" src="https://cdn-icons-png.flaticon.com/512/7835/7835447.png" alt="">
-                    <label for=" senha" class="labelInput">Senha</label>
-                </div>
-                <br><br>
-                <button class="enviar">Enviar</button>
-                <div>
-                    <a class="aCadastro" href="/Index.html">
-                        <p>Cadastre-se</p>
-                    </a>
-                </div>
+            <br><br>
+            <div class="inputBox">
+                <input type="password" name="senha" id="senha" class="inputUser" required>
+                <img id="olho" src="https://cdn-icons-png.flaticon.com/512/7835/7835447.png" alt="">
+                <label for=" senha" class="labelInput">Senha</label>
+            </div>
+            <br><br>
+            <button>Enviar</button>
+            <div>
+                <a class="aCadastro" href="/Index.html">
+                    <p>Cadastre-se</p>
+                </a>
             </div>
         </div>
+    </div>
     <script>
         document.getElementById('olho').addEventListener('mousedown', function () {
             document.getElementById('senha').type = 'text';
@@ -83,9 +53,6 @@
         document.getElementById('olho').addEventListener('mousemove', function () {
             document.getElementById('senha').type = 'password';
         });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
 </body>
 

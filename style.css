@@ -1,6 +1,7 @@
-body{
+body {
     font-family: arial;
-    background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+
 }
 
 .box {
@@ -24,29 +25,20 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 550px;
-    width: 750px;
-    padding: 50px;
+    padding: 80px;
     border-radius: 15px;
     color: white;
 }
 
-.container-login{
-    width: 45%;
-    height: auto;
-    padding: 15px;
-    border-left: 1px solid white;
+.box-img {
+    border-right: 1px solid white;
+    padding: 60px 40px 0px 0;
+    margin-right: 40px;
+
 }
 
-.box-img{
-    padding: 15px;
-    width: 300px;
-    height: 200px;
-}
-
-.d-block{
-    width: 100%;
-    height: 100%;
+img {
+    width: 200px;
 }
 
 #inputLogin {
@@ -56,7 +48,7 @@ body{
     font-size: 15px;
 }
 
-.enviar{
+button {
     background: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
     border: none;
     padding: 15px;
@@ -66,7 +58,7 @@ body{
     font-size: 15px;
 }
 
-.enviar:hover {
+button:hover {
     background: dodgerblue;
     cursor: pointer;
 }
@@ -96,14 +88,6 @@ legend {
     font-size: 15px;
     width: 100%;
     /*letter-spacing: 2px; espaçamento entre as letras*/
-
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000000s ease-in-out 0s;
 }
 
 .labelInput {
@@ -123,7 +107,6 @@ input:-webkit-autofill:active {
     font-size: 12px;
     color: dodgerblue;
 }
-
 
 #data_aniversario {
     border: none;
