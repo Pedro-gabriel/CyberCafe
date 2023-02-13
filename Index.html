@@ -10,7 +10,7 @@
 </head>
 
 <body>
-        <div class="box">
+        <div class="box-cadastro">
             <form action="">
                 <fieldset>
                     <legend>
@@ -18,17 +18,17 @@
                     </legend>
                     <br>
                     <div class="inputBox">
-                        <input type="text" name="" id="nome" class="inputUser" required>
+                        <input type="text" name="" id="nome" class="inputUser" autocomplete="off" required>
                         <label for="nome" class="labelInput">Nome Completo</label>
                     </div>
                     <br>
                     <div class="inputBox">
-                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <input type="text" name="email" id="email" class="inputUser" autocomplete="off" required>
                         <label for="email" class="labelInput">Email</label>
                     </div>
                     <br>
                     <div class="inputBox">
-                        <input type="tel" name="telefone" id="telefone" class="inputUser" maxlength="11" required>
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" autocomplete="off" maxlength="11" required>
                         <label for="tel" class="labelInput">Teledone</label>
                     </div>
                     <br>
@@ -46,23 +46,23 @@
 
                     <br><br><br>
                     <div class="inputBox">
-                        <input type="text" name="cep" id="cep" class="inputUser" maxlength="9"
+                        <input type="text" name="cep" id="cep" class="inputUser" autocomplete="off" maxlength="9"
                             onkeypress="formatar('#####-###', this)" required>
                         <label for="cep" class="labelInput">CEP</label>
                     </div>
                     <br>
                     <div class="inputBox">
-                        <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                        <input type="text" name="cidade" id="cidade" class="inputUser" autocomplete="off" required>
                         <label for="cidade" class="labelInput">Cidade</label>
                     </div>
                     <br>
                     <div class="inputBox">
-                        <input type="text" name="estado" id="estado" class="inputUser" required>
+                        <input type="text" name="estado" id="estado" class="inputUser" autocomplete="off" required>
                         <label for="estado" class="labelInput">Estado</label>
                     </div>
                     <br>
                     <div class="inputBox">
-                        <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                        <input type="text" name="endereco" id="endereco" class="inputUser" autocomplete="off" required>
                         <label for="endereco" class="labelInput">Endereço</label>
                     </div>
                     <input type="submit" name="submit" id="submit" value="Enviar">

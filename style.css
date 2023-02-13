@@ -4,7 +4,7 @@ body {
 
 }
 
-.box {
+.box-cadastro {
     position: absolute;
     /*ocupar apenas o seu elemento*/
     top: 50%;
@@ -30,7 +30,7 @@ body {
     color: white;
 }
 
-.box-img {
+.box-left {
     border-right: 1px solid white;
     padding: 60px 40px 0px 0;
     margin-right: 40px;
@@ -79,17 +79,6 @@ legend {
     position: relative;
 }
 
-.inputUser {
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    font-size: 15px;
-    width: 100%;
-    /*letter-spacing: 2px; espaçamento entre as letras*/
-}
-
 .labelInput {
     position: absolute;
     /*animação aj*/
@@ -100,6 +89,16 @@ legend {
     transition: .5s;
 }
 
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    /*letter-spacing: 2px; espaçamento entre as letras*/
+}
 
 .inputUser:focus~.labelInput,
 .inputUser:valid~.labelInput {
@@ -131,15 +130,7 @@ legend {
     background: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
 }
 
-.aCadastro{
-    cursor: pointer;
-    float: right;
-    text-decoration: none;
-    color: rgb(26, 87, 145);
-    font-size: 14px;
-}
-
-#olho{
+#eye{
     width: 30px;
     float: right;
     position: relative;
@@ -147,6 +138,14 @@ legend {
     cursor: pointer;
 }
 
-.aCadastro:hover{
+.link{
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    color: rgb(26, 87, 145);
+    font-size: 14px;
+}
+
+.link:hover{
     color: dodgerblue;
 }

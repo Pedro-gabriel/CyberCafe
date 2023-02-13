@@ -15,42 +15,42 @@
 "https://img.freepik.com/fotos-gratis/formacao-pequeno-almoco-mao-barista-cafe_1286-291.jpg?w=360&t=st=1673823170~exp=1673823770~hmac=1650fdf8e93da854704fa1c6a6b711c8473bb7fe5a94c32529d02f63590b4dfc"
 -->
     <div class="box-login">
-        <div class="box-img">
+        <div class="box-left">
             <img src="https://cdn-icons-png.flaticon.com/512/5547/5547586.png" alt="cypercoffe">
         </div>
-        <div>
+        <div class="box-right-">
             <h1>Login</h1>
             <br>
             <div class="inputBox">
-                <input type="text" name="login" id="login" class="inputUser" required>
+                <input type="text" name="login" id="login" class="inputUser" autocomplete="off" required>
                 <label for="login" class="labelInput">Login</label>
             </div>
             <br><br>
             <div class="inputBox">
-                <input type="password" name="senha" id="senha" class="inputUser" required>
-                <img id="olho" src="https://cdn-icons-png.flaticon.com/512/7835/7835447.png" alt="">
+                <input type="password" name="senha" id="senha" class="inputUser" autocomplete="off" required>
+                <img id="eye" src="https://cdn-icons-png.flaticon.com/512/7835/7835447.png" alt="">
                 <label for=" senha" class="labelInput">Senha</label>
             </div>
             <br><br>
             <button>Enviar</button>
             <div>
-                <a class="aCadastro" href="/Index.html">
+                <a class="link" href="/Index.html">
                     <p>Cadastre-se</p>
                 </a>
             </div>
         </div>
     </div>
     <script>
-        document.getElementById('olho').addEventListener('mousedown', function () {
+        document.getElementById('eye').addEventListener('mousedown', function () {
             document.getElementById('senha').type = 'text';
         });
 
-        document.getElementById('olho').addEventListener('mouseup', function () {
+        document.getElementById('eye').addEventListener('mouseup', function () {
             document.getElementById('senha').type = 'password';
         });
 
         // Para que o password não fique exposto apos mover a imagem.
-        document.getElementById('olho').addEventListener('mousemove', function () {
+        document.getElementById('eye').addEventListener('mousemove', function () {
             document.getElementById('senha').type = 'password';
         });
     </script>
